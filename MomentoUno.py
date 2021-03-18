@@ -26,6 +26,7 @@ averageTelecomunications = 0
 averageSoftware = 0
 countStudents = 0
 averageAge = 0
+average = 0
 countWomen = 0
 countMen = 0
 countNotBinary = 0
@@ -129,9 +130,8 @@ elif mMenu == "ADD":
 
 
 else:
-    while True:
-        average=0
-        average+=int(input("Ingrese edad: "))
+    while True:       
+        average = average + int(input("Ingrese edad: "))
         while True:
                 sex = input("Ingrese sexo - m(mujer), h(hombre), nb(no binario): ")
                 mSex = sex.upper()
